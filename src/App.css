@@ -23,6 +23,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.App-inside {
+  background-color: whitesmoke;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 
 .App-link {
   color: #61dafb;
@@ -48,7 +58,7 @@
 }
 
 .App-textarea {
-  width: 25%;
+  width: 80%;
   height: 150px;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -85,7 +95,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 25%;
+  width: 80%;
 }
 
 .App-button:disabled {

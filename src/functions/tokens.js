@@ -1,8 +1,41 @@
-const MainColor = () => {
+const getJson = () => {
   let json = require("../data/tokens.json");
-  return json.global.main.value;
+  return json;
 };
 
-export default MainColor;
+const BGColor = () => {
+  return getJson().global.secondarybg.value;
+};
+
+const MainColor = () => {
+  return getJson().global.primarycolor.value;
+};
+
+const PositiveColor = () => {
+  return getJson().global.positivecolor.value;
+};
+
+const NegativeColor = () => {
+  return getJson().global.negativecolor.value;
+};
+
+const WarningColor = () => {
+  return getJson().global.warningcolor.value;
+};
+
+const UiBorder = () => {
+  return getJson().global.uiborder.value;
+};
+
+const PrimaryText = () => {
+  return getJson().global.primarytext.value;
+};
+
+const BorderRadius = () => {
+  return getJson().global.primarybordersm.value;
+};
+
+
+export {getJson, BGColor, MainColor, PositiveColor, NegativeColor, WarningColor, UiBorder, PrimaryText, BorderRadius};
 
 
