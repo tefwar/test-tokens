@@ -1,14 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import MainColor from "./functions/tokens";
 
-function App() {
+const App = () => {
+  let color = MainColor();
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p style={{ color: color ?? "#33e" }}>Main Color Selected</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -20,6 +21,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
