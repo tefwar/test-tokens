@@ -4,3 +4,5 @@ const MainColor = () => {
 };
 
 export default MainColor;
+
+
