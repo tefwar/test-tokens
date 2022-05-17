@@ -9,7 +9,7 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p style={{ color: color ?? "#33e" }}>Main Color Selected</p>
+        <p style={{ color: color ?? "#fff" }}>Main Color Selected</p>
         <a
           className="App-link"
           href="https://reactjs.org"
