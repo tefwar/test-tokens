@@ -31,11 +31,15 @@ const PrimaryText = () => {
   return getJson().global.primarytext.value;
 };
 
+const SecondaryText = () => {
+  return getJson().global.secondarytext.value;
+};
+
 const BorderRadius = () => {
   return getJson().global.primarybordersm.value;
 };
 
 
-export {getJson, BGColor, MainColor, PositiveColor, NegativeColor, WarningColor, UiBorder, PrimaryText, BorderRadius};
+export {getJson, BGColor, MainColor, PositiveColor, NegativeColor, WarningColor, UiBorder, PrimaryText, SecondaryText, BorderRadius};
 
 

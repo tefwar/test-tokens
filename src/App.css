@@ -13,6 +13,10 @@
   }
 }
 
+.font-link {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
 .App-header {
   background-color: black;
   min-height: 100vh;
@@ -22,16 +26,26 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 .App-inside {
-  background-color: whitesmoke;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  margin: 16px;
+  padding: 16px;
+  width: 344px;
+}
+
+.App-emojis {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  gap: 28px;
 }
 
 .App-link {
@@ -39,27 +53,31 @@
 }
 
 .App-h3 {
-  color: #61dafb;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: left;
   font-size: 20px;
+  line-height: 18px;
+  margin: 16px 0px 8px 16px;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
 }
 
 .App-h6 {
-  color: #61dafb;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: 400;
+  align-items: flex-start;
+  justify-content: left;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 0px 0px 0px 16px;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
 }
 
 .App-textarea {
-  width: 80%;
-  height: 150px;
+  width: 90%;
+  height: 100px;
   padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -67,6 +85,7 @@
   background-color: #f8f8f8;
   font-size: 16px;
   resize: none;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
 }
 
 /* CSS */
@@ -80,7 +99,7 @@
   color: #fff;
   cursor: pointer;
   font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
-  font-size: 50%;
+  font-size: 60%;
   height: 44px;
   line-height: 1.15;
   margin: 12px 0 0;
@@ -95,7 +114,14 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 80%;
+  width: 90%;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.App-button:hover {
+  background-color: aqua;
 }
 
 .App-button:disabled {
